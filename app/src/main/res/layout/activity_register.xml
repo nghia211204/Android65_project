@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@color/app_background"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/text_view_title_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textColor="@color/text_primary"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"/>
+
+    <!-- Thêm các EditText cho Name, Email, Password, Confirm Password tương tự như Login -->
+
+    <EditText
+        android:id="@+id/edit_text_email_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/text_view_title_register"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Các EditText khác... -->
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:backgroundTint="@color/accent_yellow"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="32dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
